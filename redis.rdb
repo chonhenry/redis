@@ -1,0 +1,17 @@
+set name henry // add value henry with key name
+get name // get value of key name
+keys * // get all key
+
+lpush friends john // add list
+lpush friends sally
+lrange friends 0 -1 // get the entire list
+rpush friends mike // add to the last
+lpop friends // return and remove first item
+rpop friends // return and remove last item
+
+sadd hobbies soccer // add set
+sadd hobbies basketball
+sadd hobbies soccer
+smembers hobbies
+srem hobbies basketball // remove
+
